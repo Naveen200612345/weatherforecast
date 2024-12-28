@@ -1,0 +1,407 @@
+/* src/styles.css */
+
+/* General body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fa;
+  
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container styles */
+.container {
+  max-width: 900px; /* Set a max-width for the container */
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Heading styles */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Search bar input field */
+input[type="text"] {
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  font-size: 1.1rem;
+  border: 1px solid #ccc;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button styles */
+button {
+  border-radius: 8px;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Secondary button for geolocation */
+button.secondary {
+  background-color: #07d807;
+}
+
+button.secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Weather card styles */
+.weather-card {
+  background-color: #32e90e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.weather-card img {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.weather-card h3 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.weather-card p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Forecast card styles */
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.card img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+.card img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.card h5 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+}
+
+/* Favorites section styles */
+h3 {
+  font-size: 1.8rem;
+  margin-top: 40px;
+  font-weight: 600;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Loader spinner */
+.text-center {
+  text-align: center;
+}
+
+/* Responsiveness for small screens */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .weather-card img {
+    width: 70px;
+  }
+
+  .card img {
+    width: 50px;
+  }
+
+  input[type="text"] {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}
+/* src/styles.css */
+
+/* Weather Card Styling */
+.weather-card {
+  background-color: #ffffff;
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  text-align: center; /* Centered text */
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.weather-card:hover {
+  transform: translateY(-5px); /* Lift the card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.weather-card img {
+  width: 80px; /* Size of the weather icon */
+  margin: 15px 0; /* Margin above and below the icon */
+}
+
+.weather-card h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333333; /* Dark gray for the temperature */
+}
+
+.weather-card p {
+  font-size: 1.1rem;
+  color: #555555; /* Lighter gray for the text */
+  margin-bottom: 10px;
+}
+
+.weather-card p:first-of-type {
+  font-weight: 500; /* Make the first paragraph (condition) bold */
+}
+
+.weather-card .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #007bff; /* Blue color for the city name */
+}
+
+.weather-card .card-body {
+  padding: 10px;
+}
+
+.weather-card .weather-info {
+  font-size: 1.1rem;
+  color: #555555;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .weather-card {
+    padding: 15px;
+  }
+
+  .weather-card h3 {
+    font-size: 1.8rem;
+  }
+
+  .weather-card p {
+    font-size: 1rem;
+  }
+
+  .weather-card img {
+    width: 60px; /* Smaller icon size for mobile */
+  }
+}
+/* src/styles.css */
+
+/* Weather Forecast Styling */
+.weather-forecast .card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+ 
+  padding: 15px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.weather-forecast .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.weather-forecast .card img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.weather-forecast .card h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333333; /* Dark gray for temperature */
+  margin-bottom: 10px;
+}
+
+.weather-forecast .card p {
+  font-size: 1rem;
+  color: #555555;
+}
+
+.weather-forecast .card .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff; /* Blue for the date */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .weather-forecast .card {
+    padding: 12px;
+  }
+
+  .weather-forecast .card h5 {
+    font-size: 1.1rem;
+  }
+
+  .weather-forecast .card img {
+    width: 45px; /* Smaller icon size for mobile */
+  }
+
+  .weather-forecast .card-title {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .weather-forecast .card {
+    padding: 10px;
+  }
+
+  .weather-forecast .card h5 {
+    font-size: 1rem;
+  }
+}
+.py-5 .container {
+  display: flex;
+  flex-direction: row; /* Align items in a row */
+  justify-content: space-between; /* Distribute space between items */
+  align-items: center; /* Vertically center items */
+  padding: 2rem;
+  display: inline-block
+}
+
+/* Apply neon background gradient to the body */
+/* Apply a solid neon block color to the body */
+body {
+
+  
+  background-color: #111; /* Dark background to enhance neon glow */
+  color: white;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Neon block color background for sections */
+.neon-block {
+  background-color: #00ff99; /* Neon Green */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #00ff99; /* Glow effect */
+  margin: 20px 0;
+}
+
+/* Another neon block background */
+.neon-block-2 {
+  background-color: #ff0099; /* Neon Pink */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #ff0099; /* Glow effect */
+  margin: 20px 0;
+}
+
+/* Glowing text for headers and paragraphs */
+h1, h2, h3, p {
+  color: white;
+  text-shadow: 
+    0 0 5px #00ff99, 
+    0 0 10px #00ff99, 
+    0 0 15px #ff0099, 
+    0 0 20px #ff0099;
+}
+
+/* Glowing button */
+button {
+  background-color: #00bfff; /* Neon Blue */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+ /* box-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff;*/
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff0099;
+  box-shadow: 0 0 10px #ff0099, 0 0 20px #ff0099;
+}
+.row {
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #00ff99;
+  margin: 10px;
+  text-align: center;
+  line-height: 100px;
+}
