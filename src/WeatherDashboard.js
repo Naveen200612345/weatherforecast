@@ -53,7 +53,7 @@ const WeatherDashboard = () => {
         });
         setForecast(dailyForecast.slice(0, 5));
       } catch (err) {
-        setError('Error fetching weather data');
+        setError('E');
       } finally {
         setLoading(false);
       }
